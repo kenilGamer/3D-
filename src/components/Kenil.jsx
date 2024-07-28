@@ -34,7 +34,7 @@ export function Avatar2(props) {
   );
   useFrame((state)=>{
     if(headFollow){
-     group.current.getObjectByName("Head").lookAt(state.camera.position);
+     group.current.getObjectByName("Head").lookAt(state.mouse.x, state.mouse.y, 1);
     }
     if(cursorFollow){
       const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
