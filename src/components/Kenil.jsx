@@ -60,29 +60,35 @@ export function Avatar2(props) {
           geometry={nodes.Wolf3D_Hair.geometry}
           material={materials.Wolf3D_Hair}
           skeleton={nodes.Wolf3D_Hair.skeleton}
+          frustumCulled={false} 
         />
         <skinnedMesh
           geometry={nodes.Wolf3D_Body.geometry}
           material={materials.Wolf3D_Body}
+          frustumCulled={false} 
           skeleton={nodes.Wolf3D_Body.skeleton}
         />
         <skinnedMesh
+          frustumCulled={false} 
           geometry={nodes.Wolf3D_Outfit_Bottom.geometry}
           material={materials.Wolf3D_Outfit_Bottom}
           skeleton={nodes.Wolf3D_Outfit_Bottom.skeleton}
         />
         <skinnedMesh
+          frustumCulled={false} 
           geometry={nodes.Wolf3D_Outfit_Footwear.geometry}
           material={materials.Wolf3D_Outfit_Footwear}
           skeleton={nodes.Wolf3D_Outfit_Footwear.skeleton}
         />
         <skinnedMesh
+          frustumCulled={false} 
           geometry={nodes.Wolf3D_Outfit_Top.geometry}
           material={materials.Wolf3D_Outfit_Top}
           skeleton={nodes.Wolf3D_Outfit_Top.skeleton}
         />
         <skinnedMesh
           name="EyeLeft"
+          frustumCulled={false} 
           geometry={nodes.EyeLeft.geometry}
           material={materials.Wolf3D_Eye}
           skeleton={nodes.EyeLeft.skeleton}
@@ -95,6 +101,7 @@ export function Avatar2(props) {
           material={materials.Wolf3D_Eye}
           skeleton={nodes.EyeRight.skeleton}
           morphTargetDictionary={nodes.EyeRight.morphTargetDictionary}
+          frustumCulled={false} 
           morphTargetInfluences={nodes.EyeRight.morphTargetInfluences}
         />
         <skinnedMesh
@@ -102,11 +109,13 @@ export function Avatar2(props) {
           geometry={nodes.Wolf3D_Head.geometry}
           material={materials.Wolf3D_Skin}
           skeleton={nodes.Wolf3D_Head.skeleton}
+          frustumCulled={false} 
           morphTargetDictionary={nodes.Wolf3D_Head.morphTargetDictionary}
           morphTargetInfluences={nodes.Wolf3D_Head.morphTargetInfluences}
         />
         <skinnedMesh
           name="Wolf3D_Teeth"
+          frustumCulled={false} 
           geometry={nodes.Wolf3D_Teeth.geometry}
           material={materials.Wolf3D_Teeth}
           skeleton={nodes.Wolf3D_Teeth.skeleton}
