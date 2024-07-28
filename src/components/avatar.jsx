@@ -9,7 +9,7 @@ import { useGLTF } from "@react-three/drei";
 import { SkeletonUtils } from "three-stdlib";
 
 export function Avatar(props) {
-  const { scene } = useGLTF("/public/model/sir.glb");
+  const { scene } = useGLTF("/model/sir.glb");
   const clone = React.useMemo(() => SkeletonUtils.clone(scene), [scene]);
   const { nodes, materials } = useGraph(clone);
   return (
@@ -84,4 +84,4 @@ export function Avatar(props) {
   );
 }
 
-useGLTF.preload("/public/model/sir.glb");
+useGLTF.preload("/model/sir.glb");
